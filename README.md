@@ -2,7 +2,7 @@
 
 **A Hybrid CTC Decoder with Confidence-Gated Language Model Rescoring**
 
-Anik Biswas\*, Shohanur Rahman\*, Mehedi Hasan Anjan
+Anik Biswas\*, Md. Shohanur Rahman\*, Mehedi Hasan Anjan
 *2026 29th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh*
 \* equal contribution
 
