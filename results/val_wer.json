@@ -1,0 +1,10 @@
+{
+  "wer_beam_ngram_only": 0.07548967707781895,
+  "cer_beam_ngram_only": 0.05375272896839696,
+  "wer_full_pipeline": 0.07548967707781895,
+  "cer_full_pipeline": 0.053074461094978695,
+  "per_greedy": 0.12123115577889447,
+  "lm_weight": 4.5,
+  "llm_fusion_weight_base": 0.75,
+  "mean_adaptive_lambda": 0.4176951224732626
+}

@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "From Spikes to Sentences: code, notebooks and models"
+type: software
+license: MIT
+version: "1.0.0"
+authors:
+  - family-names: Biswas
+    given-names: Anik
+    affiliation: "Bangladesh University of Engineering and Technology (BUET)"
+    email: "1906125@eee.buet.ac.bd"
+  - family-names: Rahman
+    given-names: Shohanur
+    affiliation: "Shahjalal University of Science and Technology (SUST)"
+  - family-names: Anjan
+    given-names: Mehedi Hasan
+    affiliation: "Bangladesh University of Engineering and Technology (BUET)"
+# doi: 10.5281/zenodo.XXXXXXX      <- add after reserving the DOI on Zenodo
+repository-code: "https://github.com/ShohanNur/spikes-to-sentences"
+keywords:
+  - brain-computer interface
+  - speech neuroprosthesis
+  - CTC
+  - N-best rescoring
+  - large language models
+preferred-citation:
+  type: conference-paper
+  title: "From Spikes to Sentences: A Hybrid CTC Decoder with Confidence-Gated Language Model Rescoring"
+  authors:
+    - family-names: Biswas
+      given-names: Anik
+    - family-names: Rahman
+      given-names: Shohanur
+    - family-names: Anjan
+      given-names: Mehedi Hasan
+  collection-title: "2026 29th International Conference on Computer and Information Technology (ICCIT)"
+  conference:
+    name: "ICCIT 2026"
+    city: "Cox's Bazar"
+    country: BD
+  year: 2026

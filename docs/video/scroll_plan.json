@@ -1,0 +1,17 @@
+{
+ "s07": [
+  [0, 0, 4.0, "Notebook 01, the run reported in the paper: checkpoint, lexicon and 4-gram load"],
+  [0, 1150, 2.5, "Scrolling to the validation results"],
+  [1150, 1150, 4.5, "Beam + 4-gram at α = 4.5: WER 7.55 %, CER 5.38 %; greedy PER 12.12 %"],
+  [1150, 1150, 4.0, "Gate at OP-A skips 393 of 1,426 sentences; CER falls to 5.31 %"],
+  [1150, 1750, 2.5, "The 132-point grid over α and λ₀ (7.6 h)"],
+  [1750, 1750, 5.0, "Best setting, OP-B: α = 5.5, λ₀ = 1.25, WER 7.26 %, CER 5.18 %"]
+ ],
+ "s08": [
+  [0, 0, 4.5, "Notebook 02, Block 7: decode at α = 5.5, score every list once with the LLM"],
+  [0, 0, 5.5, "Paired bootstrap: WER −0.11 [−0.34, +0.12], a tie; CER −0.15, p = 0.041"],
+  [0, 330, 2.5, "Seven rules on identical lists"],
+  [330, 330, 5.5, "Session-disjoint fit: no rule beats the decoder alone (ours 7.39 vs 7.37)"],
+  [330, 330, 4.0, "Test files use validation-frozen thresholds; LLM pass 1.08 s, beam 67 ms"]
+ ]
+}

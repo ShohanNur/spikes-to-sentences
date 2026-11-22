@@ -1,0 +1,11 @@
+# Tested on the Kaggle Python 3.12 GPU image (PyTorch 2.10, CUDA 12.8, NVIDIA T4),
+# which already provides torch, numpy, pandas, scipy, h5py, matplotlib and tqdm.
+# Extra packages installed by the notebooks:
+transformers
+accelerate
+bitsandbytes
+jiwer
+editdistance
+torchaudio
+flashlight-text==0.0.7
+kenlm
