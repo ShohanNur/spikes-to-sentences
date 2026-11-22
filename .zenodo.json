@@ -1,1 +1,17 @@
-
+{
+  "title": "From Spikes to Sentences: code, notebooks and models for confidence-gated LLM rescoring of intracortical speech decoding",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "Replication package for the ICCIT 2026 paper 'From Spikes to Sentences: A Hybrid CTC Decoder with Confidence-Gated Language Model Rescoring'. Contains the full pipeline notebook (hybrid CNN-BiLSTM-Transformer CTC model, lexicon-constrained 4-gram beam search, gated margin-adaptive Qwen2.5-7B score fusion), the revision experiment that produces Table II and the paired statistics, both notebooks with the outputs of the runs reported in the paper, the results files, the paper source, an offline test harness, the trained checkpoint, the pronunciation lexicon and the 4-gram KenLM model. Data: Brain-to-Text '25 (participant T15), not redistributed.",
+  "creators": [
+    {"name": "Biswas, Anik", "affiliation": "Bangladesh University of Engineering and Technology (BUET)"},
+    {"name": "Rahman, Shohanur", "affiliation": "Shahjalal University of Science and Technology (SUST)"},
+    {"name": "Anjan, Mehedi Hasan", "affiliation": "Bangladesh University of Engineering and Technology (BUET)"}
+  ],
+  "keywords": ["brain-computer interface", "speech neuroprosthesis", "CTC", "N-best rescoring", "large language models", "score fusion", "Brain-to-Text 2025"],
+  "license": "MIT",
+  "related_identifiers": [
+    {"identifier": "https://github.com/ShohanNur/spikes-to-sentences", "relation": "isSupplementTo", "resource_type": "software"},
+    {"identifier": "https://www.kaggle.com/competitions/brain-to-text-25", "relation": "references", "resource_type": "dataset"}
+  ]
+}
