@@ -2,16 +2,19 @@
 
 **A Hybrid CTC Decoder with Confidence-Gated Language Model Rescoring**
 
-Anik Biswas\*, Md. Shohanur Rahman\*, Mehedi Hasan Anjan
+Anik Biswas\*, Md. Shohanur Rahman\*, Mehedi Hasan, Celia Shahnaz
 *2026 29th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh*
 \* equal contribution
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-Video walkthrough: VIDEO_URL
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24432296.svg)](https://doi.org/10.5281/zenodo.24432296)
+Video walkthrough: https://youtu.be/OtxaGQm6QDg
 
 This repository holds the code, executed notebooks, results and paper source for
-the ICCIT 2026 paper. The archived release on Zenodo also includes the trained
-checkpoint, the pronunciation lexicon and the 4-gram KenLM model.
+the ICCIT 2026 paper. The archived release on Zenodo
+([10.5281/zenodo.24432296](https://doi.org/10.5281/zenodo.24432296)) holds the
+trained checkpoint (`swa_model.pt`), the pronunciation lexicon and token list
+(`lexicon.txt`, `tokens.txt`) and the 4-gram KenLM model (`custom_4gram.bin`,
+19.1 GB).
 
 ## What the system does
 
@@ -67,9 +70,11 @@ and Table II of the paper.
    - dataset `heyyousum/quality-english-dataset-for-ngram-model-v2` (`lexicon.txt`, `tokens.txt`);
    - dataset `heyyousum/custom-4-gram-wiki-news-switchboard-updated-v3` (`custom_4gram.bin`).
 
-   If a dataset is not visible to you, download `models.zip` from the Zenodo
-   record, upload its files as your own Kaggle dataset and change the dataset
-   names in Block 1 (`PRETRAINED_CKPT_DATASET`) and Block 5.2.
+   If a dataset is not visible to you, download the four files (`swa_model.pt`,
+   `lexicon.txt`, `tokens.txt`, `custom_4gram.bin`) from the
+   [Zenodo record](https://doi.org/10.5281/zenodo.24432296), upload them as your
+   own Kaggle dataset and change the dataset names in Block 1
+   (`PRETRAINED_CKPT_DATASET`) and Block 5.2.
 4. Run All. The notebook loads the checkpoint (no training), reports OP-A
    (WER 7.55 %, CER 5.38 % to 5.31 %, PER 12.12 %), then Block 7 decodes at
    OP-B, scores every list once with the LLM, compares seven rules, runs the
@@ -106,13 +111,16 @@ to end and writes valid LaTeX.
 
 ```bibtex
 @inproceedings{biswas2026spikes,
-  author    = {Biswas, Anik and Rahman, Shohanur and Anjan, Mehedi Hasan},
+  author    = {Biswas, Anik and Rahman, Md. Shohanur and Hasan, Mehedi and
+               Shahnaz, Celia},
   title     = {From Spikes to Sentences: A Hybrid {CTC} Decoder with
                Confidence-Gated Language Model Rescoring},
   booktitle = {2026 29th International Conference on Computer and
                Information Technology (ICCIT)},
   address   = {Cox's Bazar, Bangladesh},
-  year      = {2026}
+  year      = {2026},
+  doi       = {10.5281/zenodo.24432296},
+  note      = {Model files and replication package}
 }
 ```
 
