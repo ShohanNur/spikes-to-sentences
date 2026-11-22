@@ -119,8 +119,8 @@ to end and writes valid LaTeX.
                Information Technology (ICCIT)},
   address   = {Cox's Bazar, Bangladesh},
   year      = {2026},
-  doi       = {10.5281/zenodo.24432296},
-  note      = {Model files and replication package}
+  note      = {Model files and replication package:
+               \url{https://doi.org/10.5281/zenodo.24432296}}
 }
 ```
 
