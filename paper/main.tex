@@ -163,13 +163,14 @@
 %  PDF must be filled here before upload; nothing else needs editing.
 %=======================================================================
 \newcommand{\Fill}[1]{\textcolor{red}{\textbf{[#1]}}}
-\newcommand{\AuthEmailA}{1906125@eee.buet.ac.bd}
-\newcommand{\AuthEmailB}{\Fill{e-mail, S.~Rahman}}
-\newcommand{\AuthEmailC}{\Fill{e-mail, M.~H.~Anjan}}
+\newcommand{\AuthEmailA}{anikbiswas730@gmail.com}
+\newcommand{\AuthEmailB}{shohanur.rahman133883@gmail.com}
+\newcommand{\AuthEmailC}{1906075@eee.buet.ac.bd}
+\newcommand{\AuthEmailD}{celia.shahnaz@gmail.com}
 % Full links.  Example: \url{https://doi.org/10.5281/zenodo.1234567}
-\newcommand{\ZenodoLink}{\Fill{Zenodo DOI link}}
-\newcommand{\GitHubLink}{\Fill{GitHub URL}}
-\newcommand{\VideoLink}{\Fill{video URL}}
+\newcommand{\ZenodoLink}{\url{https://doi.org/10.5281/zenodo.24432296}}
+\newcommand{\GitHubLink}{\url{https://github.com/ShohanNur/spikes-to-sentences}}
+\newcommand{\VideoLink}{\url{https://youtu.be/ld1J75Zcg9g}}
 
 %=======================================================================
 %  ICCIT 2026 first-page header and IEEE copyright footer, as given in the
@@ -187,10 +188,22 @@
 \placetextbox{0.08}{0.055}{979-8-3195-0171-4/26/\$31.00 \textcopyright 2026 IEEE}
 \hypersetup{pdftitle={From Spikes to Sentences: A Hybrid CTC Decoder with
   Confidence-Gated Language Model Rescoring},
-  pdfauthor={Anik Biswas, Shohanur Rahman, Mehedi Hasan Anjan},
+  pdfauthor={Anik Biswas, Md. Shohanur Rahman, Mehedi Hasan, Celia Shahnaz},
   pdfsubject={2026 29th International Conference on Computer and Information Technology (ICCIT)},
   pdfkeywords={brain-computer interface, speech neuroprosthesis, CTC, N-best rescoring,
   large language models, score fusion}}
+
+%-----------------------------------------------------------------------
+%  Author row break: puts the fourth author centred on a second row.
+%-----------------------------------------------------------------------
+\makeatletter
+\newcommand{\linebreakand}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
 \begin{document}
 
 \title{From Spikes to Sentences: A Hybrid CTC Decoder\\ with Confidence-Gated Language Model Rescoring}
@@ -199,23 +212,25 @@
 %  Authors.  "*" marks equal (co-first) contribution.
 %-----------------------------------------------------------------------
 \author{
-\IEEEauthorblockN{Anik Biswas$^{*}$}
-\IEEEauthorblockA{\textit{Bangladesh University of}\\
-\textit{Engineering and Technology (BUET)}\\
-Dhaka, Bangladesh\\
+\IEEEauthorblockN{\footnotesize Anik Biswas$^{*}$}
+\IEEEauthorblockA{\scriptsize \textit{Department of Electrical and Electronic Engineering}\\\textit{Bangladesh University of Engineering and Technology}\\
+Dhaka-1000, Bangladesh\\
 \AuthEmailA}
 \and
-\IEEEauthorblockN{Shohanur Rahman$^{*}$}
-\IEEEauthorblockA{\textit{Shahjalal University of}\\
-\textit{Science and Technology (SUST)}\\
-Sylhet, Bangladesh\\
+\IEEEauthorblockN{\footnotesize Md.~Shohanur Rahman$^{*}$}
+\IEEEauthorblockA{\scriptsize \textit{Department of Computer Science and Engineering}\\\textit{Shahjalal University of Science and Technology}\\
+Kumargaon, Sylhet-3114, Bangladesh\\
 \AuthEmailB}
 \and
-\IEEEauthorblockN{Mehedi Hasan Anjan}
-\IEEEauthorblockA{\textit{Bangladesh University of}\\
-\textit{Engineering and Technology (BUET)}\\
-Dhaka, Bangladesh\\
+\IEEEauthorblockN{\footnotesize Mehedi Hasan}
+\IEEEauthorblockA{\scriptsize \textit{Department of Electrical and Electronic Engineering}\\\textit{Bangladesh University of Engineering and Technology}\\
+Dhaka-1000, Bangladesh\\
 \AuthEmailC}
+\linebreakand
+\IEEEauthorblockN{\footnotesize Celia Shahnaz}
+\IEEEauthorblockA{\scriptsize \textit{Department of Electrical and Electronic Engineering}\\\textit{Bangladesh University of Engineering and Technology}\\
+Dhaka-1000, Bangladesh\\
+\AuthEmailD}
 \thanks{$^{*}$These authors contributed equally to this work.}
 }
 
@@ -936,9 +951,10 @@ with the decoder they were measured against. Future work will calibrate online
 and move the rule onto a pretrained encoder, where the phoneme floor is lower.
 
 \textbf{Code, data and video.} The data are public \cite{kaggle2025b2t}. Code,
-pinned configurations, the trained checkpoint, the paired-comparison script
-behind Table~\ref{tab:paired} and a walkthrough video are archived at
-\ZenodoLink{} (source: \GitHubLink; video: \VideoLink).
+pinned configurations and the paired-comparison script behind
+Table~\ref{tab:paired} are at \GitHubLink{}; the trained checkpoint, lexicon,
+token list and 4-gram language model are archived at \ZenodoLink{}. A
+walkthrough video is at \VideoLink{}.
 
 %=======================================================================
 \balance
