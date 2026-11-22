@@ -7,7 +7,7 @@ Anik Biswas\*, Md. Shohanur Rahman\*, Mehedi Hasan, Celia Shahnaz
 \* equal contribution
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24432296.svg)](https://doi.org/10.5281/zenodo.24432296)
-Video walkthrough: https://youtu.be/OtxaGQm6QDg
+Video walkthrough: https://youtu.be/ld1J75Zcg9g
 
 This repository holds the code, executed notebooks, results and paper source for
 the ICCIT 2026 paper. The archived release on Zenodo
@@ -110,7 +110,7 @@ to end and writes valid LaTeX.
 ## Citation
 
 ```bibtex
-@inproceedings{biswas2026spikes,
+@inproceedings{b2T2025spikes,
   author    = {Biswas, Anik and Rahman, Md. Shohanur and Hasan, Mehedi and
                Shahnaz, Celia},
   title     = {From Spikes to Sentences: A Hybrid {CTC} Decoder with
@@ -119,8 +119,8 @@ to end and writes valid LaTeX.
                Information Technology (ICCIT)},
   address   = {Cox's Bazar, Bangladesh},
   year      = {2026},
-  note      = {Model files and replication package:
-               \url{https://doi.org/10.5281/zenodo.24432296}}
+  doi       = {10.5281/zenodo.24432296},
+  note      = {Model files and replication package}
 }
 ```
 
@@ -132,4 +132,5 @@ data and is shared for research use under the same terms.
 
 ## Contact
 
-Anik Biswas, 1906125@eee.buet.ac.bd
+Anik Biswas, anikbiswas730@gmail.com 
+Md.Shohanur Rahman, shohanur.rahman133883@gmail.com
