@@ -1,0 +1,11 @@
+# large model files live in the Zenodo archive, not in git
+*.pt
+*.bin
+*.arpa
+*.pkl
+*.h5
+__pycache__/
+.ipynb_checkpoints/
+paper/*.aux
+paper/*.log
+paper/*.out
